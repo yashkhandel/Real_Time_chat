@@ -1,0 +1,28 @@
+:root {
+  --bg: #0B0E14;
+  --surface: #121620;
+  --surface-raised: #171C28;
+  --border: #232938;
+  --text-primary: #E7EAF0;
+  --text-muted: #7C8496;
+  --accent: #3DDAD7;
+  --accent-dim: #226E6C;
+  --warn: #F2A93B;
+  --danger: #F2554D;
+
+  --font-body: 'Inter', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; }
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+button { font-family: inherit; }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
